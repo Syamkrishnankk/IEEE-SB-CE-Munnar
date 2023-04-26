@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IEEE SB CEMUNNAR</title>
-    <link rel="icon" href="black sb copy.png" type="image/icon type">
+    <link rel="icon" href="/black sb copy.png" type="image/icon type">
     <!-- CSS only -->
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -16,7 +16,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   </head>
 <body style="background-image: linear-gradient(to right,rgb(255, 255, 255), rgb(255, 255, 255));">
             <header>
@@ -27,7 +29,7 @@
 <div class="nav-header">
 <div class="nav-logo">
 <a href="#">
-  <img id="logo" src="black sb copy.png" width="90px" alt="logo">
+  <img id="logo" src="/black sb copy.png" width="90px" alt="logo">
 </a>
 </div>
 </div>
@@ -73,14 +75,15 @@
             
 </section>
 </header>  
-<div class="header-image" id="Home" style="background-image: url(clg.jpg); padding-top: 20%;" >
+<div class="header-image" id="Home" style="background-image: url(/clg.jpg); padding-top: 20%;" >
   <p class="sbname">IEEE SB CE MUNNAR</p>
 </div>  
 
 <!--About IEEE-->
 <div class="ieee">
-  <h2 class="heading">What is IEEE?</h2>
+  <h2 class="heading" >What is IEEE?</h2>
   <div class="line mx-auto"></div> 
+  <div class="textlr">
   <P class="text-ieee"> 
     IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
     <h5>Mission & Vision</h5>
@@ -88,20 +91,24 @@
     <p class="text-ieee">Vision statement : IEEE will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.</p>
   </P>
 </div>
+</div>
 
 
 
 
 <!--About IEEE SB CE Munnar-->
 <div class="ieee">
-  <h2 style="text-align: center;"> IEEE SB CE Munnar</h2>
+  <h2 class="heading" style="text-align: center;"> IEEE SB CE Munnar</h2>
   <div class="line mx-auto"></div> 
+  <div class="textrl">
   <P class="text-ieee"> 
     IEEE Student Branch of College of Engineering, Munnar was established in 2006. Even
 though membership dwindled in the ensuing years due to numerous factors and
 consequently, the once flourishing student branch became dormant, it once again grew
 active after 2009. Currently, it is one of the most vibrant student branch chapters in the
-Kerala Section.
+Kerala Section.</P></div>
+<div class="textlr">
+  <P class="text-ieee">
 Currently, it boasts 50+ enthusiastic members spread across the five student branch
 chapters of the IEEE technical societies: the Computer Society, the Power & Energy Society,
 the Industrial Applications Society, the Industrial Electronics Society, and the Power
@@ -110,24 +117,25 @@ of the respected counsellor and branch counsellor, Dr. Biju K., and the college,
 branch was able to conduct various programs including Cynosure '10, the national level
 WINGCOM '11, and the infamous Kaizen series. </P>
 </div>
+</div>
 <!--Gallery-->
 <div class="slideshow-container pb-3 mx-auto">
 
   <div class="mySlides">
     <div class="numbertext">1 / 3</div>
-    <img src="iv.jpg" style="width:100%">
+    <img src="/iv.jpg" style="width:100%">
     <div class="text">Industrial Visit to <br>Bhoothathankettu Dam & Power Station</div>
   </div>
   
   <div class="mySlides">
     <div class="numbertext">2 / 3</div>
-    <img src="IMG-20220708-WA0038-edited-1024x576.jpg" style="width:100%">
+    <img src="/IMG-20220708-WA0038-edited-1024x576.jpg" style="width:100%">
     <div class="text">PELS Day Celebration</div>
   </div>
   
   <div class="mySlides">
     <div class="numbertext">3 / 3</div>
-    <img src="d.jpg" style="width:100%">
+    <img src="/d.jpg" style="width:100%">
     <div class="text">Interaction with Deepak Mathur</div>
   </div>
   
@@ -136,10 +144,10 @@ WINGCOM '11, and the infamous Kaizen series. </P>
 
 <!--ExeCom-->
 <div class="ieee" id="EXECOM">
-<h3 style="text-align: center;">EXECOM</h3>
+<h3 class="heading" style="text-align: center;">EXECOM</h3>
 <div class="line mx-auto"></div> 
-<img src="Untitled-5.png" style="width: 100%; padding-bottom: 10px;">
-<img src="Untitled-8.png" style="width: 100%;">
+<div class="textlr"><img src="/Untitled-5.png" style="width: 100%; padding-bottom: 10px;"></div>
+<div class="textrl"><img src="/Untitled-8.png" style="width: 100%;"></div>
 </div>
 
 
@@ -226,5 +234,91 @@ document.addEventListener('click', (event) => {
     setTimeout(showSlides, 5000); // Change image every 2 seconds
   }
   </script>
+
+  <!--scroll Animation-->
+  <script>
+    // Get all elements with the class "reveal-text"
+var revealTexts = document.querySelectorAll('.heading');
+
+// Function to check if an element is in viewport
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  revealTexts.forEach(function(el) {
+    if (isElementInViewport(el)) {
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }
+  });
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+</script>
+<!--Animation from Left to Right-->
+<script>
+  // Get all elements with the class "reveal-text"
+var revealText = document.querySelectorAll('.textlr');
+
+// Function to check if an element is in viewport
+function isElementInViewport(e) {
+var rec = e.getBoundingClientRect();
+return (
+  rec.top >= 0 &&
+  rec.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+);
+}
+
+// Function to handle scroll event
+function handleScrol() {
+revealText.forEach(function(e) {
+  if (isElementInViewport(e)) {
+    e.style.opacity = '1';
+    e.style.transform = 'translateX(0)';
+  }
+});
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScrol);
+
+</script>
+  
+<!--Animation from Right to Left-->
+<script>
+  // Get all elements with the class "reveal-text"
+var revealTex = document.querySelectorAll('.textrl');
+
+// Function to check if an element is in viewport
+function isElementInViewport(e) {
+var re = e.getBoundingClientRect();
+return (
+  re.top >= 0 &&
+  re.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+);
+}
+
+// Function to handle scroll event
+function handleScro() {
+revealTex.forEach(function(e) {
+  if (isElementInViewport(e)) {
+    e.style.opacity = '1';
+    e.style.transform = 'translateX(0)';
+  }
+});
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScro);
+
+</script>
 
 </html>
